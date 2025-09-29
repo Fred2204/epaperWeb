@@ -1,0 +1,157 @@
+/* Reset */
+body, h1, p, img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Banner */
+.banner {
+  background-color: #f9f9f9;
+  padding: 10px;
+  position: relative;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Hamburger menu */
+.menu-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.hamburger {
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  background: white;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+}
+
+.menu a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #eee;
+}
+
+.menu a:hover {
+  background: #f0f0f0;
+}
+
+/* Desktop vs Mobile Images */
+.desktop-img {
+  display: block;
+  width: 100%;
+}
+
+.mobile-img {
+  display: none;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .desktop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+  }
+}
+
+/* Contact Page */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+}
+
+/* Adjust font size on smaller screens */
+@media (max-width: 480px) {
+  .contact h1 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Default styling (desktop first) */
+.content {
+  max-width: 50%;        /* leaves about 25% space on each side */
+  margin: 25vh auto 0;   /* top margin = 25% of viewport height, centered */
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .content {
+    max-width: 90%;       /* leave only little padding on sides */
+    margin: 20px auto 0;  /* smaller top margin */
+  }
+}
+
+/* Privacy Policy Page */
+.policy {
+  max-width: 60%;         /* nice readable width on desktop */
+  margin: 80px auto 40px; /* push down below banner, add bottom spacing */
+  text-align: left;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Adjust for tablets */
+@media (max-width: 1024px) {
+  .policy {
+    max-width: 80%;
+    margin: 60px auto 30px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Adjust for mobile phones */
+@media (max-width: 600px) {
+  .policy {
+    max-width: 95%;
+    margin: 40px auto 20px;
+    font-size: 0.9rem;   /* slightly smaller for readability */
+  }
+}
+
+
+
