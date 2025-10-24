@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Epaper Navigation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+  <style>
+    .download-btn {
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background-color: #6BBF4E; /* main grass green */
+      color: black;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.2;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      transition: background-color 0.2s ease;
+      width: 160px;
+    }
+
+    .download-btn:hover {
+      background-color: #6e6e6e;
+    }
+
+    .download-btn span {
+      display: block;
+    }
+
+    /* Ensure header allows positioning */
+    .banner {
+      position: relative;
+    }
+
+@media (max-width: 600px) {
+  .download-btn {
+    top: 100px;   /* move further down on mobile */
+    right: 10px; /* maybe a bit closer to the edge */
+    width: 140px;
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- Banner -->
+  <header class="banner">
+    <img src="GreenTrailsBanner.jpg" alt="Banner">
+
+    <!-- Download Button -->
+    <a href="track-gpx-on-epaper.apk" download class="download-btn">
+      <span>Download App</span>
+      <span>"Track gpx on E-paper"</span>
+    </a>
+
+    <div class="menu-container">
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <nav class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="policy.html">Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Landscape (desktop) -->
+    <img src="EpaperWebLandscape.jpg" alt="Landscape" class="desktop-img">
+    <!-- Portrait (mobile) -->
+    <img src="EpaperWebPortrait.jpg" alt="Portrait" class="mobile-img">
+  </main>
+</body>
+</html>
